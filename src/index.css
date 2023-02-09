@@ -11,32 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.board-row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 20%;
-  
-  
-}
+
 .square{
+  
+  border: 3px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2em;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 20%;
+  justify-content: center;
+  align-items: center;
   
 }
 
-
-.myButton{
-  background-color: white;
-  color: black;
-  border: 1px solid rgb(2, 2, 2);
-  height: 30px;
-  
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  
+.container{
+  width: 300px;
+	height: 300px;
+	margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  border: 6px solid #2c3e50;
+  border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
+
